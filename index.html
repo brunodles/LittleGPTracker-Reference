@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Visual Reference</title>
+
+    <style>
+        :root {
+            --bg: #111;
+            --panel: #1c1c1c;
+            --border: #444;
+            --text: #eee;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .tracker-section {
+            min-height: 100vh;
+            padding: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .tracker-section h2 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid var(--border);
+            padding: 00px;
+            vertical-align: top;
+        }
+
+        .image-frame {
+            width: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        /*
+         * Crop configuration:
+         *
+         * --crop-top
+         * --crop-right
+         * --crop-bottom
+         * --crop-left
+         *
+         * Values are pixels.
+         */
+        .cropped-image {
+            display: block;
+
+            width: calc(
+                    100% +
+                    var(--crop-left, 0px) +
+                    var(--crop-right, 0px)
+            );
+
+            margin-top: calc(-1 * var(--crop-top, 0px));
+            margin-right: calc(-1 * var(--crop-right, 0px));
+            margin-bottom: calc(-1 * var(--crop-bottom, 0px));
+            margin-left: calc(-1 * var(--crop-left, 0px));
+
+            image-rendering: pixelated;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Music Tracker Visual Reference</h1>
+    <p>LSDJ • LittleGPTracker • Dirtywave M8 • Risa Tracker</p>
+</header>
+
+
+<!-- LGPT - Wip -->
+<section class="tracker-section" id="lgpt-wip">
+    <h2>LittleGPTracker (LGPT) - my Wip</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt-wip/config-screen.png"
+                            alt="Config Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt-wip/project-screen.png"
+                            alt="Project Screen"
+                    >
+                </div>
+            </td>
+
+            <td></td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt-wip/groove-screen.png"
+                            alt="Groove Screen"
+                    >
+                </div>
+            </td>
+
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt-wip/song-screen.png"
+                            alt="Song Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt-wip/chain-screen.png"
+                            alt="Chain Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/phrase-screen.png"
+                            alt="Phrase Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt-wip/instrument-screen.png"
+                            alt="Instrument Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            </td>
+
+            <td>
+<!--                <div class="image-frame">-->
+<!--                    <img-->
+<!--                            class="cropped-image"-->
+<!--                            src="images/lgpt-wip/mixer-screen.png"-->
+<!--                            alt="Mixer Screen"-->
+<!--                    >-->
+<!--                </div>-->
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/table-screen.png"
+                            alt="Table Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/table-screen.png"
+                            alt="Table Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- LGPT -->
+<section class="tracker-section" id="lgpt">
+    <h2>LittleGPTracker (LGPT)</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/project-screen.png"
+                            alt="Project Screen"
+                    >
+                </div>
+            </td>
+
+            <td></td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/groove-screen.png"
+                            alt="Groove Screen"
+                    >
+                </div>
+            </td>
+
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/song-screen.png"
+                            alt="Song Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/chain-screen.png"
+                            alt="Chain Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/phrase-screen.png"
+                            alt="Phrase Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/instrument-screen.png"
+                            alt="Instrument Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/mixer-screen.png"
+                            alt="Mixer Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/table-screen.png"
+                            alt="Table Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lgpt/table-screen.png"
+                            alt="Table Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- M8 -->
+<section class="tracker-section" id="m8">
+    <h2>Dirtywave M8</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/midi-settings-screen.png"
+                            alt="Midi Settings Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/midi-mapping-screen.png"
+                            alt="Midi Mapping Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/time-stats-screen.png"
+                            alt="Time stats Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/theme-screen.png"
+                            alt="Theme Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/scale-screen.png"
+                            alt="Scale Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/project-screen.png"
+                            alt="Project Screen"
+                    >
+                </div>
+            </td>
+            <td></td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/groove-screen.png"
+                            alt="Groove Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/instrument-mods-screen.png"
+                            alt="Instrument Mods Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/song-screen.png"
+                            alt="Song Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/chain-screen.png"
+                            alt="Chain Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/phrase-screen.png"
+                            alt="Phrase Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/instrument-screen.png"
+                            alt="Instrument Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/table-screen.png"
+                            alt="Table Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/mixer-screen.png"
+                            alt="Mixer Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/m8/effect-screen.png"
+                            alt="Effect Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- Risa Tracker -->
+<section class="tracker-section" id="risa">
+    <h2>Risa Tracker</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/project-screen.png"
+                            alt="Project Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/song-screen.png"
+                            alt="Song Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/chain-screen.png"
+                            alt="Chain Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/phrase-screen.png"
+                            alt="Phrase Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/instrument-screen.png"
+                            alt="Instrument Screen"
+                    >
+                </div>
+            </td>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/table-screen.png"
+                            alt="Table Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/risa/groove-screen.png"
+                            alt="Groove Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- LSDJ -->
+<section class="tracker-section" id="lsdj">
+    <h2>LSDJ</h2>
+
+    <table>
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/project-screen.png"
+                            alt="LSDJ Project Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/synth-screen.png"
+                            alt="LSDJ Synth Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/wave-screen.png"
+                            alt="LSDJ Wave Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/song-screen.png"
+                            alt="LSDJ Song Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/chain-screen.png"
+                            alt="LSDJ Chain Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/phrase-screen.png"
+                            alt="LSDJ Phrase Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/instrument-screen.png"
+                            alt="LSDJ Instrument Screen"
+                    >
+                </div>
+            </td>
+
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/table-screen.png"
+                            alt="LSDJ Table Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="image-frame">
+                    <img
+                            class="cropped-image"
+                            src="images/lsdj/groove-screen.png"
+                            alt="LSDJ Groove Screen"
+                    >
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>
